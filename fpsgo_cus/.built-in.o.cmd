@@ -1,0 +1,1 @@
+cmd_/home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/fpsgo_cus/built-in.o :=  rm -f /home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/fpsgo_cus/built-in.o; llvm-ar rcSTPD /home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/fpsgo_cus/built-in.o

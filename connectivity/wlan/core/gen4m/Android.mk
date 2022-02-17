@@ -1,4 +1,5 @@
 LOCAL_PATH := $(call my-dir)
+
 ifeq ($(MTK_WLAN_SUPPORT), yes)
 
 include $(CLEAR_VARS)

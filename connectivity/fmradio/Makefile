@@ -23,7 +23,6 @@ ccflags-y += -imacros $(AUTOCONF_H)
 ifndef TOP
     TOP := $(srctree)/..
 endif
-$(echo TOP variable in fmradio Makefile : $(TOP))
 # Force build fail on modpost warning
 KBUILD_MODPOST_FAIL_ON_WARNINGS := y
 ###############################################################################
@@ -144,14 +143,14 @@ $(FM_CHIP)-objs    += core/fm_module.o \
                 core/fm_reg_utils.o
 
 ifeq ($(CFG_BUILD_CONNAC2), true)
-    CONNINFRA_SRC_FOLDER := $(TOP)/../../vendor/mediatek/kernel_modules/connectivity/conninfra
+    CONNINFRA_SRC_FOLDER := $(TOP)/vendor/mediatek/kernel_modules/connectivity/conninfra
 
     ccflags-y += -I$(CONNINFRA_SRC_FOLDER)/include
     ccflags-y += -DCFG_FM_CONNAC2=1
     $(FM_CHIP)-objs += chips/mt6635/pub/mt6635_2_fm_lib.o
     $(FM_CHIP)-objs += plat/conn_infra.o
 else
-    WMT_SRC_FOLDER := $(TOP)/../../vendor/mediatek/kernel_modules/connectivity/common
+    WMT_SRC_FOLDER := $(TOP)/vendor/mediatek/kernel_modules/connectivity/common
     WMT_INCLUDE_PATH := common_main
 
     ccflags-y += -I$(WMT_SRC_FOLDER)/$(WMT_INCLUDE_PATH)/include \

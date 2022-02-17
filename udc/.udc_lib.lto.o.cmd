@@ -1,0 +1,1 @@
+cmd_/home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/udc/udc_lib.lto.o := ld.lld -maarch64linux -O2 --thinlto-cache-dir=.thinlto-cache  -r -o /home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/udc/udc_lib.lto.o  --whole-archive /home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/udc/udc_lib.o

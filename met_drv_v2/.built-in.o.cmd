@@ -1,0 +1,1 @@
+cmd_/home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/met_drv_v2/built-in.o :=  rm -f /home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/met_drv_v2/built-in.o; llvm-ar rcSTPD /home/erlkonig/Desktop/android-kernel/MTK_kernel_modules-cezanne-r-oss/met_drv_v2/built-in.o

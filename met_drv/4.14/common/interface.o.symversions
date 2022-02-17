@@ -1,0 +1,15 @@
+__crc_met_mode = 0xf8d205ca;
+__crc_met_strbuf_nmi = 0xbc35d57e;
+__crc_met_strbuf_irq = 0xb48391d3;
+__crc_met_strbuf_sirq = 0xfaac424b;
+__crc_met_strbuf = 0xb0e37fe8;
+__crc_met_device = 0xb87b3998;
+__crc_met_boot_msg_tmp = 0xaf32892a;
+__crc_pr_bootmsg = 0x75d125fe;
+__crc_met_register = 0x30094be7;
+__crc_met_deregister = 0xb5d7ef8a;
+__crc_met_set_platform = 0x16d478c2;
+__crc_met_get_platform = 0x5a23fe26;
+__crc_met_set_chip_id = 0x9383dc2a;
+__crc_met_get_chip_id = 0x4edf4c9d;
+__crc_met_set_topology = 0x7f53b32c;

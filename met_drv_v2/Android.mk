@@ -1,7 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
 # kernel version check
-RUBBISSSSH := ($(echo $(LINUX_KERNEL_VERSION)))
 KERNEL_VERSION := $(word 2,$(subst -, ,$(LINUX_KERNEL_VERSION)))
 MAJOR_VERSION := $(shell echo $(KERNEL_VERSION) | cut -f1 -d.)
 MINOR_VERSION := $(shell echo $(KERNEL_VERSION) | cut -f2 -d.)
