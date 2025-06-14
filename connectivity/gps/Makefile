@@ -68,7 +68,7 @@ GPS_DRV_CONTROL_LNA := n
 SELECT_GPS_DL_DRV := n
 GPS_DL_HAS_MOCK := n
 GPS_DL_HAS_CONNINFRA_DRV := n
-GPS_SRC_FOLDER := $(shell pwd)/../drivers/misc/MTK_kernel_modules-cezanne-r-oss/connectivity/gps
+GPS_SRC_FOLDER := $(shell pwd)/../../MTK_kernel_modules-cezanne-r-oss/connectivity/gps
 
 ifeq ($(CONFIG_ARCH_MTK_PROJECT),"k6833v1_64_swrgo")
 ccflags-y += -DCONFIG_GPSL5_SUPPORT
