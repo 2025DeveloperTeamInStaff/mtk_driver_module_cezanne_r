@@ -68,7 +68,9 @@ GPS_DRV_CONTROL_LNA := n
 SELECT_GPS_DL_DRV := n
 GPS_DL_HAS_MOCK := n
 GPS_DL_HAS_CONNINFRA_DRV := n
-GPS_SRC_FOLDER := $(TOP)/vendor/mediatek/kernel_modules/connectivity/gps
+GPS_SRC_FOLDER := $(pwd)
+
+$(warning gps src folder $(GPS_SRC_FOLDER))
 
 ifeq ($(CONFIG_ARCH_MTK_PROJECT),"k6833v1_64_swrgo")
 ccflags-y += -DCONFIG_GPSL5_SUPPORT
