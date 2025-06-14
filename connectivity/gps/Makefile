@@ -68,7 +68,7 @@ GPS_DRV_CONTROL_LNA := n
 SELECT_GPS_DL_DRV := n
 GPS_DL_HAS_MOCK := n
 GPS_DL_HAS_CONNINFRA_DRV := n
-GPS_SRC_FOLDER := $(pwd)
+GPS_SRC_FOLDER := $(shell pwd)
 
 $(warning gps src folder $(GPS_SRC_FOLDER))
 
@@ -111,7 +111,8 @@ endif
 
 ifeq ($(SELECT_GPS_DL_DRV),y) # New GPS driver with L1+L5 support
 ifeq ($(GPS_DL_HAS_CONNINFRA_DRV),y)
-CONNINFRA_SRC_FOLDER := $(TOP)/vendor/mediatek/kernel_modules/connectivity/conninfra
+CONNINFRA_SRC_FOLDER := $(TOP)/MTK_kernel_modules-cezanne-r-oss/connectivity/conninfra
+$(warning CONNINFRA_SRC_FOLDER $(CONNINFRA_SRC_FOLDER))
 ccflags-y += -I$(CONNINFRA_SRC_FOLDER)/include
 ccflags-y += -DGPS_DL_HAS_CONNINFRA_DRV=1
 endif
