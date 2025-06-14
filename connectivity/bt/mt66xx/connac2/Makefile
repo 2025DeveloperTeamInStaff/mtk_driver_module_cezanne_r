@@ -59,8 +59,9 @@ endif
 # ---------------------------------------------------
 # Include Path
 # ---------------------------------------------------
-CONN_INFRA_SRC := $(TOP)/drivers/misc/MTK_kernel_modules-cezanne-r-oss/connectivity/conninfra
-WMT_SRC := $(TOP)/drivers/misc/MTK_kernel_modules-cezanne-r-oss/connectivity/common
+$(warning "top is $(TOP) src is $(srctree)")
+CONN_INFRA_SRC := $(TOP)/MTK_kernel_modules-cezanne-r-oss/connectivity/conninfra
+WMT_SRC := $(TOP)/MTK_kernel_modules-cezanne-r-oss/connectivity/common
 BTIF_SRC := $(srctree)/drivers/misc/mediatek/btif
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common
 ccflags-y += -I$(CONN_INFRA_SRC)/include
